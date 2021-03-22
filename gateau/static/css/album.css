@@ -1,0 +1,48 @@
+p {
+color : #ffa07a
+font-family: 'sticky_candy-webfont';
+
+}
+
+@font-face {
+    font-family: 'sticky_candy-webfont';
+    src: url('../fonts/sticky_candy-webfont.woff2') format('woff2'),
+         url('../fonts/sticky_candy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}

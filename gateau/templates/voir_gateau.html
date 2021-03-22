@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Liste des gateaux</h1>
+{% for gateau in gateaux %}
+    <h2>{{ gateau.name }}</h2>
+    <img src="{{ gateau.photo.url }}"/>
+{% endfor %}
+
+
+
+{% endblock %}

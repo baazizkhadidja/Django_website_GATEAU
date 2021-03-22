@@ -1,0 +1,33 @@
+on teste ici le modèle de l'album fait dans le projet discaire
+{% extends 'base.html' %}
+{% block content %}
+
+
+    {% for gateau in gateaux %}
+<div class="col-sm-4 text-center">
+    <a href="/">
+        <img class = "img-responsive"
+                 src="{{gateau.photo.url}}"
+                 alt="{{gateau.name}}">
+    </a>
+    <h3>
+        <a href="/">
+
+            <p>{{gateau.name}}</p>
+        </a>
+    </h3>
+
+
+</div>
+
+{% if forloop.counter|divisibleby:3 %}
+<div class="clearfix"></div>
+{% endif %}
+
+</div>
+
+
+    {% endfor %}
+
+</ul>
+{% endblock %}
